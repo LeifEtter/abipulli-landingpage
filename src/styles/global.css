@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Onest";
+  src: url("/fonts/OnestVariable.ttf") format("truetype");
+  font-weight: 100 200 300 400 500 600 700 800 900;
+  font-style: normal;
+}
+
+@theme {
+  --color-abipulli-green: #c7e1be;
+  --color-abipulli-green-light: #e8f1e5;
+  --color-abipulli-green-strong: #578a46;
+  --color-abipulli-green-strong-opacity-50: rgba(87, 138, 70, 0.5);
+  --color-abipulli-grey-border: #d5d7da;
+  --color-abipulli-offblack: #1e1e1e;
+}
+
+html,
+body {
+  font-family: "Onest";
+}
