@@ -3,6 +3,16 @@ import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import AbipulliHat from "../assets/abipulli-hat.svg";
+import EmblaCarousel from "../components/Carousel";
+
+const items = [
+  { id: 1, content: "Item 1" },
+  { id: 2, content: "Item 2" },
+  { id: 3, content: "Item 3" },
+  { id: 4, content: "Item 3" },
+  { id: 5, content: "Item 3" },
+  { id: 6, content: "Item 3" },
+];
 ---
 
 <Layout>
@@ -25,6 +35,7 @@ import AbipulliHat from "../assets/abipulli-hat.svg";
     Die modernsten und nachhaltigsten AbiPullis
   </p>
   <a class="shadow bg-abipulli-green">Jetzt Design Starten</a>
+  <EmblaCarousel slides={items} client:load />
   <div
     class="absolute w-full overflow-hidden h-full flex flex-row justify-center top-0"
   >
