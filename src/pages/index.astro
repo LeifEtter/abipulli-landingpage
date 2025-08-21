@@ -45,4 +45,22 @@ const items = [
       </div>
     </div>
   </section>
+  <section class="flex flex-col items-center mt-50">
+    <h1 class="text-5xl font-semibold">Der Ablauf</h1>
+    <div class="flex flex-row gap-6 mt-10">
+      {
+        [
+          { title: "Erzähl uns über dich und eine Stufe" },
+          { title: "Erstelle Dein eigenes einzigartiges Design" },
+          { title: "Lass Deine Stufe Abstimmen" },
+          { title: "Erhalte deine einzigartigen Pullover" },
+        ].map((e) => (
+          <div class="w-50">
+            <div class="w-50 h-50 bg-abipulli-beige rounded-3xl" />
+            <p class="text-center mt-2 font-medium">{e.title}</p>
+          </div>
+        ))
+      }
+    </div>
+  </section>
 </Layout>
