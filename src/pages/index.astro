@@ -27,21 +27,22 @@ const items = [
       <a class="rounded-md">KI</a>
     </div>
   </header>
-  <h1 class="text-8xl font-medium text-center">
-    Das Original für<br />AbiPullis
-  </h1>
-  <div></div>
-  <p class="text-center font-medium text-xl">
-    Die modernsten und nachhaltigsten AbiPullis
-  </p>
-  <a class="shadow bg-abipulli-green">Jetzt Design Starten</a>
-  <EmblaCarousel slides={items} client:load />
-  <div
-    class="absolute w-full overflow-hidden h-full flex flex-row justify-center top-0"
-  >
+  <section id="title-section">
+    <h1 class="text-8xl font-medium text-center">
+      Das Original für<br />AbiPullis
+    </h1>
+    <p class="text-center font-medium text-xl">
+      Die modernsten und nachhaltigsten AbiPullis
+    </p>
+    <a class="shadow bg-abipulli-green">Jetzt Design Starten</a>
+    <EmblaCarousel slides={items} client:load />
     <div
-      class="absolute bg-abipulli-green-light w-900 h-900 rounded-full text-center -top-700 -z-10"
+      class="absolute w-full overflow-hidden h-full flex flex-row justify-center top-0"
     >
+      <div
+        class="absolute bg-abipulli-green-light w-900 h-900 rounded-full text-center -top-700 -z-10"
+      >
+      </div>
     </div>
-  </div>
+  </section>
 </Layout>
