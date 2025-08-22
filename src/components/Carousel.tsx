@@ -5,7 +5,7 @@ import { PrevButton, NextButton, usePrevNextButtons } from "./CarouselButton";
 import useEmblaCarousel from "embla-carousel-react";
 
 type PropType = {
-  slides: [{ id: number; content: string }];
+  slides: { id: number; content: string }[];
   options?: EmblaOptionsType;
 };
 
