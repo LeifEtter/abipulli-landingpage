@@ -4,6 +4,10 @@ import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import AbipulliHat from "../assets/abipulli-hat.svg";
 import EmblaCarousel from "../components/Carousel";
+import YellowPenIcon from "../assets/yellow-pen-icon.svg";
+import YellowPeopleIcon from "../assets/yellow-people-icon.svg";
+import YellowPhoneIcon from "../assets/yellow-phone-icon.svg";
+import Feature from "../components/Feature.astro";
 
 const items = [
   { id: 1, content: "Item 1" },
@@ -65,5 +69,20 @@ const items = [
   </section>
   <section class="flex flex-col items-center bg-abipulli-green-light pt-6">
     <h1 class="text-5xl font-semibold">Smarte Features</h1>
+    <Feature
+      icon={YellowPenIcon}
+      title="Selbstständig designen - mit KI & echten Designprofis"
+      description=" Erstelle dein eigenes Design in Sekunden Die KI unterstützt dich, echte Designer helfen bei Bedarf"
+    />
+    <Feature
+      icon={YellowPeopleIcon}
+      title="Unkompliziertes Abstimmen im Jahrgang"
+      description="Stimmt stufenweise über euer Lieblingsdesign ab"
+    />
+    <Feature
+      icon={YellowPenIcon}
+      title="Immer für euch erreichbar"
+      description="Schnelle Antworten auf eure Fragen Direkter Kontakt zum Team"
+    />
   </section>
 </Layout>
